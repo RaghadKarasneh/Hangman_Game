@@ -1,6 +1,6 @@
 'use strict';
 
-let movies=['harry potter',`alice in wonderland`, 'the conjuring','the invisible man'];
+let movies=['harry_potter',`alice_in_wonderland`, 'the_conjuring','the_invisible_man'];
 let hints = [
 'A series of seven fantasy novels written by British author J. K. Rowling, which novels chronicle the lives of a young wizard ',
 'A young girl falls through a rabbit hole into a fantasy world of anthropomorphic creatures',
@@ -22,7 +22,7 @@ function randomWord() {
 }
 
 function generateButtons() {
-  let buttonsHTML = `abcdefghijklmnopqrstuvwxyz`.split('').map(letter =>
+  let buttonsHTML = `abcdefghijklmnopqrstuvwxyz_`.split('').map(letter =>
     `
       <button
         class="btn col-lg-1 col-md-2 col-sm-3 buttonStyle"
