@@ -1,80 +1,25 @@
 body{
-    background-color: #f7a001;
+    background-color:#f7a001;
     color: white;
 }
-.hangman-container{
-    margin-top: 70px;
+.container{
+    margin-top: 100px;
 }
-.hangman-container:after{
-    content: "";
-    display: table;
-    clear: both;
+h1{
+    margin-bottom: 30px;
 }
 a{
+    text-decoration: none;
     color: white;
-    transition: 0.5s ease-in-out;
+    transition: 1s all ease-in-out;
 }
 a:hover{
-    color:black
-}
-canvas{
-    color: white;
-    border:  #fff dashed 2px;
-    padding: 15px;
-}
-#alphabet{
-    margin: 12px auto;
-    max-width: 900px;
-}
-#alphabet:after{
-    content: "";
-    display: table;
-}
-#alphabet li{
-    float: left;
-    margin: 0 10px 10px 0;
-    list-style: none;
-    width: 35px;
-    height: 30px;
-    padding-top: 10px;
-    background: #fff;
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius:5px ;
-    border:solid 1px #fff
-}
-#alphabet li:hover{
-    border: 1px solid #fff;
-}
-#my-try{
-    display: block;
-}
-#my-try li{
-    position: relative;
-    list-style: none;
-    display: inline-block;
-    padding: 0 16px;
-    font-size: 15px;
-}
-.active{
-    opacity: 0.4;
-    filter: alpah(opacity=40);
-    transition: all 1s ease-in-out;
-}
-.active:hover{
-    transition: all 1s ease-in-out;
-    opacity: 0.4;
-    filter: alpah(opacity=40);
-}
-#livesNum{
-    font-size: 15px;
-    display: block;
-}
-.row{
-    margin-bottom: 20px;
+    color: black;
 }
 button{
+    margin-top: 50px;
+}
+.buttonStyle{
     border-radius: 5px;
     width: 40px;
     background-color: transparent;
@@ -84,14 +29,25 @@ button{
     font-size: 20px;
     padding: 5px;
     outline: none;
+    color:white;
+    margin-right: 10px;
 }
-button:hover{
+
+#hintButton{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#resetButton,
+#hintButton{
+    background-color:#f7a001 ;
+    color:white;
+    border:10px double white;
+    transition: 0.5s all ease-in-out
+}
+.buttonStyle:hover,
+#resetButton:hover,
+#hintButton:hover{
     background-color: white;
     color: #f7a001;
     font-weight: bold;
-}
-#buttons{
-    width: 50%;
-    margin: auto;
-    margin-top: 100px;
 }
