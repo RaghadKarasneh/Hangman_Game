@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <div class="container hangman-container">
+        <h1 class="text-center">Hangman</h1>
+        <h3 class="text-center">Hangman is a simple game that based on JavaScript</h3>
+        <h4 class="text-center">Built by <a href="https://www.linkedin.com/in/raghad-al-karasneh-385a23168/" target="_blank">Raghad AlKarasneh</a></h4>
+        <!--Letters box-->
+        <div id="buttons">
+            <div class="row">
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>a</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>b</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>c</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>d</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>e</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>f</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>g</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>h</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>i</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>j</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>k</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>l</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>m</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>n</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>o</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>p</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>q</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>r</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>s</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>t</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>u</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>v</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>w</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>x</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-1 col-md-2 col-sm-3 ">
+                    <button>y</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3">
+                    <button>z</button>
+                </div>
+            </div>
+            <p id="selectTopic"></p>
+            <div class="hold"></div>
+            <p id="livesNum" class="text-center"></p>
+            <p id="space">-</p>
+            <canvas id="man">Unfortunately your browser doesn't support canves</canvas>
+            <div class="options">
+                <button id="hint">Hint</button>
+                <button id="reset">Play again</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
